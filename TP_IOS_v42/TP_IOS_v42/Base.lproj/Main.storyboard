@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TP_IOS_v42" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q7P-pb-KpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zda-Ti-kzm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d3o-OC-2ma">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="298.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="themask.svg" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-Uq-QXj">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="248.5"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWY-Sy-GKe">
+                                                <rect key="frame" x="0.0" y="248.5" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7dJ-Px-gaz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="Voir la bande annonce"/>
+                                                <connections>
+                                                    <action selector="clickBAFilm:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="CIq-uJ-Q42"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WP2-sb-R5a">
+                                        <rect key="frame" x="0.0" y="298.5" width="414" height="597.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5yT-tl-qFg">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="525"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WoW-u2-SIz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WgV-eM-oRN">
+                                                                <rect key="frame" x="8" y="35.5" width="199" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioH-WD-PVN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1994" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-1H-ToN">
+                                                                        <rect key="frame" x="99.5" y="0.0" width="99.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PEn-Yt-0V2">
+                                                                <rect key="frame" x="207" y="35.5" width="199" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="durée :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr6-lC-0MC">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-fO-CmZ">
+                                                                        <rect key="frame" x="99.5" y="0.0" width="99.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="30" leading="8" bottom="30" trailing="8"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GfU-A9-raB">
+                                                        <rect key="frame" x="0.0" y="91.5" width="414" height="110.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Mask" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWK-k2-ffI">
+                                                                <rect key="frame" x="8" y="30" width="398" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="premier" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOw-ur-SoN">
+                                                                <rect key="frame" x="8" y="59" width="398" height="21.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="30" leading="8" bottom="30" trailing="8"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KPg-gp-qCX">
+                                                        <rect key="frame" x="0.0" y="202" width="414" height="105.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catégories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh0-sI-sCV">
+                                                                <rect key="frame" x="8" y="30" width="398" height="37"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kYw-VS-5pe">
+                                                                <rect key="frame" x="8" y="67" width="398" height="30.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comedie fantastique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmb-Fm-bcf">
+                                                                        <rect key="frame" x="0.0" y="10" width="398" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="30" leading="8" bottom="8" trailing="8"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XV0-Ay-Qa8">
+                                                        <rect key="frame" x="0.0" y="307.5" width="414" height="75"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Synopsis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soA-19-hp0">
+                                                                <rect key="frame" x="8" y="30" width="398" height="37"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="30" leading="8" bottom="8" trailing="8"/>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2p-fv-eGe">
+                                                        <rect key="frame" x="0.0" y="382.5" width="414" height="142.5"/>
+                                                        <string key="text">Stanley Ipkiss est un banal employé de banque. Il voue une passion aux cartoons de Tex Avery. Un soir, il trouve un masque ancien doté de pouvoirs surnaturels révélant et exagérant la personnalité de son possesseur1. Chaque fois qu'il le porte, il devient The Mask, personnage loufoque, sûr de lui et plein de ressources qui défraie la chronique.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="XV0-Ay-Qa8" firstAttribute="top" secondItem="5yT-tl-qFg" secondAttribute="top" constant="307.33333333333331" id="5Ou-eQ-eoZ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="5yT-tl-qFg" firstAttribute="trailing" secondItem="rWv-CL-9JC" secondAttribute="trailing" id="75J-G4-8Yw"/>
+                                            <constraint firstItem="5yT-tl-qFg" firstAttribute="top" secondItem="rWv-CL-9JC" secondAttribute="top" id="DGq-a0-e5f"/>
+                                            <constraint firstItem="5yT-tl-qFg" firstAttribute="width" secondItem="Yc8-Yr-M3n" secondAttribute="width" id="VWn-Ur-FQ3"/>
+                                            <constraint firstItem="5yT-tl-qFg" firstAttribute="bottom" secondItem="rWv-CL-9JC" secondAttribute="bottom" id="iZF-yZ-IC4"/>
+                                            <constraint firstItem="5yT-tl-qFg" firstAttribute="leading" secondItem="rWv-CL-9JC" secondAttribute="leading" id="uS1-hQ-3XP"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="rWv-CL-9JC"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Yc8-Yr-M3n"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14813493620000001" green="0.1506220878" blue="0.18946324480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WP2-sb-R5a" firstAttribute="leading" secondItem="zda-Ti-kzm" secondAttribute="leading" id="6YX-C4-2Tg"/>
+                                    <constraint firstItem="WP2-sb-R5a" firstAttribute="top" secondItem="d3o-OC-2ma" secondAttribute="bottom" id="ZUR-eF-zWQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="WP2-sb-R5a" secondAttribute="bottom" id="cdf-0A-cms"/>
+                                    <constraint firstAttribute="trailing" secondItem="WP2-sb-R5a" secondAttribute="trailing" id="hQJ-9R-3iv"/>
+                                    <constraint firstAttribute="height" secondItem="d3o-OC-2ma" secondAttribute="height" multiplier="3" id="j1g-R0-x34"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XsP-jL-Apu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zda-Ti-kzm" firstAttribute="leading" secondItem="q7P-pb-KpQ" secondAttribute="leading" id="5Sv-AN-gsC"/>
+                            <constraint firstItem="zda-Ti-kzm" firstAttribute="top" secondItem="q7P-pb-KpQ" secondAttribute="top" id="AZQ-cZ-oeQ"/>
+                            <constraint firstAttribute="bottom" secondItem="zda-Ti-kzm" secondAttribute="bottom" id="Cjj-mv-rLH"/>
+                            <constraint firstAttribute="trailing" secondItem="zda-Ti-kzm" secondAttribute="trailing" id="POT-Qd-8iN"/>
+                            <constraint firstItem="WP2-sb-R5a" firstAttribute="width" secondItem="XsP-jL-Apu" secondAttribute="width" id="Qlr-Kl-9Po"/>
+                            <constraint firstItem="zda-Ti-kzm" firstAttribute="leading" secondItem="q7P-pb-KpQ" secondAttribute="leading" id="Trw-PL-sGs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CategFilmvIEW" destination="kYw-VS-5pe" id="KFm-Jh-CbC"/>
+                        <outlet property="bandAnnonceButton" destination="hWY-Sy-GKe" id="Ly3-jB-tX1"/>
+                        <outlet property="categoriesFilm" destination="xmb-Fm-bcf" id="Exf-1g-ARe"/>
+                        <outlet property="dateFilm" destination="ziZ-1H-ToN" id="V10-XV-C1j"/>
+                        <outlet property="dureefilm" destination="gdW-fO-CmZ" id="NLX-aV-35c"/>
+                        <outlet property="imageFilm" destination="Ocd-Uq-QXj" id="4j3-73-rsK"/>
+                        <outlet property="sousTitreFilm" destination="KOw-ur-SoN" id="B41-ly-6rH"/>
+                        <outlet property="synopsisFilm" destination="f2p-fv-eGe" id="hQP-Df-w2F"/>
+                        <outlet property="titreFilm" destination="jWK-k2-ffI" id="QeK-WT-tmw"/>
+                        <outlet property="titrecatFilm" destination="hh0-sI-sCV" id="IRW-hF-hT9"/>
+                        <outlet property="titresynFilm" destination="soA-19-hp0" id="PBE-Om-doR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
+    <resources>
+        <image name="themask.svg" width="1920" height="1099"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
