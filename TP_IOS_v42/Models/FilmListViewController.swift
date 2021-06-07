@@ -161,7 +161,7 @@ class FilmListViewController: UITableViewController {
         
         //let storyboard = UIStoryboard(name: "FilmListViewController", bundle: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let customViewController = storyboard.instantiateViewController(withIdentifier: "Mainview") as! ViewController
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
         customViewController.recupmovie = movie
         navigationController?.pushViewController(customViewController, animated: true)
     }
