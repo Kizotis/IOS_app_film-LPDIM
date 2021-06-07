@@ -40,24 +40,26 @@ class ViewController: UIViewController {
             dureefilm.text = "\(detailfilm.runtime ?? 0) min"
             
             categoriesFilm.text = ""
-            detailfilm.genres.forEach{(genre) in
-                DispatchQueue.main.async(execute: { () -> Void in
-                    let textLabel = UILabel()
-                    textLabel.text  = genre.name
-                    textLabel.textAlignment = .center
-                    self.CategFilmvIEW.addArrangedSubview(textLabel)
-                    })
+            if let genres = detailfilm.genres {
+                genres.forEach{(genre) in
+                    DispatchQueue.main.async(execute: { () -> Void in
+                        let textLabel = UILabel()
+                        textLabel.text  = genre.name
+                        textLabel.textAlignment = .center
+                        self.CategFilmvIEW.addArrangedSubview(textLabel)
+                        })
+                }
             }
+            
             synopsisFilm.text = detailfilm.overview
-            urlfilm = URL(string: "https://image.tmdb.org/t/p/w500/\(detailfilm.backdrop_path)")!
-        }
+            if let backdropPath = detailfilm.backdrop_path, let path = URL(string: "https://image.tmdb.org/t/p/w500/\(backdropPath)") {
+                urlfilm = path
+            }        }
         
     }
     
     @IBAction func clickBAFilm(_ sender: Any) {
             UIApplication.shared.openURL(urlfilm!)
     }
-    
-    
 }
 
