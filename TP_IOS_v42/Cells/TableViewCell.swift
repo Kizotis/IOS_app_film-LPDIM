@@ -20,7 +20,7 @@ class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+		synopsisFilmlist.numberOfLines = 3
         // Configure the view for the selected state
     }
     
